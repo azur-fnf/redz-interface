@@ -1,1 +1,1 @@
-# Interface made by redz(just a shit fork)
+# Interface made by redz(just make a shit fork)
