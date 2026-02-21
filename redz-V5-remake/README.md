@@ -22,7 +22,7 @@ O nome **Wand** representa a próxima geração das UIs do **Redz Hub**.
 ## 🚀 Instalação
 
 ```lua
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/azur-fnf/redz-interface/refs/heads/main/redz-V5-remake/main.luau"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/azuriondeve/redz-interface/refs/heads/main/redz-V5-remake/main.luau"))()
 ```
 
 ---
