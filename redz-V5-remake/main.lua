@@ -53,92 +53,86 @@ local p=o:GetMouse()
 local q=(gethui or function()return g.CoreGui end)()
 
 local r = {
-    Darker = {
-        Colors = {
-            Background = ColorSequence.new{
-                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)),
-                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
-                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))
-            },
-            Primary = Color3.fromRGB(88, 101, 242),
-            OnPrimary = Color3.fromRGB(61, 67, 135),
-            ScrollBar = Color3.fromRGB(1, 76, 105),
-            Stroke = Color3.fromRGB(45, 45, 45),
-            Error = Color3.fromRGB(255, 102, 102),
-            Icons = Color3.fromRGB(232, 233, 235),
-            JoinButton = Color3.fromRGB(37, 128, 69),
-            Link = Color3.fromRGB(40, 150, 255),
-            Dialog = { Background = Color3.fromRGB(28, 28, 28) },
-            Buttons = { Holding = Color3.fromRGB(34, 34, 34), Default = Color3.fromRGB(28, 28, 30) },
-            Border = { Holding = Color3.fromRGB(60, 60, 60), Default = Color3.fromRGB(38, 38, 38) },
-            Text = { Default = Color3.fromRGB(255, 255, 255), Dark = Color3.fromRGB(200, 200, 200), Darker = Color3.fromRGB(175, 175, 175) },
-            Slider = { SliderBar = Color3.fromRGB(1, 76, 105), SliderNumber = Color3.fromRGB(232, 233, 235) },
-            Dropdown = { Holder = Color3.fromRGB(30, 30, 30) }
-        },
-        Icons = {
-            Error = "rbxassetid://10709752996", Button = "rbxassetid://10709791437", Close = "rbxassetid://10747384394",
-            TextBox = "rbxassetid://15637081879", Search = "rbxassetid://10734943674", Keybind = "rbxassetid://10734982144",
-            Dropdown = { Open = "rbxassetid://10709791523", Close = "rbxassetid://10709790948" }
-        },
-        Font = {
-            Normal = Enum.Font.BuilderSans, Medium = Enum.Font.BuilderSansMedium, Bold = Enum.Font.BuilderSansBold,
-            ExtraBold = Enum.Font.BuilderSansExtraBold, SliderValue = Enum.Font.FredokaOne
-        },
-        BackgroundTransparency = 0.03
-    },
-    
-    -- NOVO TEMA PURPLE ADICIONADO AQUI
     Purple = {
         Colors = {
             Background = ColorSequence.new{
-                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(15, 10, 25)),
-                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(25, 15, 45)),
-                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 10, 25))
+                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(15, 0, 25)),
+                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(30, 0, 50)),
+                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 0, 25))
             },
-            Primary = Color3.fromRGB(145, 70, 255),
-            OnPrimary = Color3.fromRGB(100, 40, 200),
-            ScrollBar = Color3.fromRGB(120, 50, 220),
-            Stroke = Color3.fromRGB(60, 30, 90),
-            Error = Color3.fromRGB(255, 80, 80),
-            Icons = Color3.fromRGB(240, 230, 255),
-            JoinButton = Color3.fromRGB(120, 40, 200),
-            Link = Color3.fromRGB(180, 100, 255),
-            Dialog = { Background = Color3.fromRGB(20, 12, 35) },
-            Buttons = { Holding = Color3.fromRGB(45, 25, 70), Default = Color3.fromRGB(35, 20, 55) },
-            Border = { Holding = Color3.fromRGB(90, 50, 150), Default = Color3.fromRGB(65, 35, 110) },
-            Text = { Default = Color3.fromRGB(255, 255, 255), Dark = Color3.fromRGB(210, 190, 230), Darker = Color3.fromRGB(180, 160, 200) },
-            Slider = { SliderBar = Color3.fromRGB(145, 70, 255), SliderNumber = Color3.fromRGB(240, 230, 255) },
-            Dropdown = { Holder = Color3.fromRGB(30, 15, 50) }
+            Primary = Color3.fromRGB(180, 80, 255),
+            OnPrimary = Color3.fromRGB(90, 40, 130),
+            ScrollBar = Color3.fromRGB(140, 60, 200),
+            Stroke = Color3.fromRGB(60, 20, 100),
+
+            Error = Color3.fromRGB(255, 100, 255),
+            Icons = Color3.fromRGB(230, 200, 255),
+
+            JoinButton = Color3.fromRGB(150, 50, 220),
+            Link = Color3.fromRGB(220, 150, 255),
+
+            Dialog = {
+                Background = Color3.fromRGB(25, 5, 40)
+            },
+            Buttons = {
+                Holding = Color3.fromRGB(60, 20, 90),
+                Default = Color3.fromRGB(40, 10, 60)
+            },
+            Border = {
+                Holding = Color3.fromRGB(120, 60, 180),
+                Default = Color3.fromRGB(80, 40, 120),
+            },
+            Text = {
+                Default = Color3.fromRGB(255, 255, 255),
+                Dark = Color3.fromRGB(200, 180, 220),
+                Darker = Color3.fromRGB(160, 140, 180),
+            },
+            Slider = {
+                SliderBar = Color3.fromRGB(140, 60, 220),
+                SliderNumber = Color3.fromRGB(240, 220, 255),
+            },
+            Dropdown = {
+                Holder = Color3.fromRGB(45, 10, 70),
+            }
         },
         Icons = {
-            Error = "rbxassetid://10709752996", Button = "rbxassetid://10709791437", Close = "rbxassetid://10747384394",
-            TextBox = "rbxassetid://15637081879", Search = "rbxassetid://10734943674", Keybind = "rbxassetid://10734982144",
-            Dropdown = { Open = "rbxassetid://10709791523", Close = "rbxassetid://10709790948" }
+            Error = "rbxassetid://10709752996",
+            Button = "rbxassetid://10709791437",
+            Close = "rbxassetid://10747384394",
+            TextBox = "rbxassetid://15637081879",
+            Search = "rbxassetid://10734943674",
+            Keybind = "rbxassetid://10734982144",
+            Dropdown = {
+                Open = "rbxassetid://10709791523",
+                Close = "rbxassetid://10709790948"
+            }
         },
         Font = {
-            Normal = Enum.Font.BuilderSans, Medium = Enum.Font.BuilderSansMedium, Bold = Enum.Font.BuilderSansBold,
-            ExtraBold = Enum.Font.BuilderSansExtraBold, SliderValue = Enum.Font.FredokaOne
+            Normal = Enum.Font.BuilderSans,
+            Medium = Enum.Font.BuilderSansMedium,
+            Bold = Enum.Font.BuilderSansBold,
+            ExtraBold = Enum.Font.BuilderSansExtraBold,
+            SliderValue = Enum.Font.FredokaOne
         },
-        BackgroundTransparency = 0.05
+        BackgroundTransparency = 0.03
     }
 }
 
--- Trava os temas
 for s, t in r do
     t.Name = s
     table.freeze(t)
 end
 
-local s={
-Information={
-Version="v2.0.2",
-GitHubOwner="azuriondeve" -- sorry redz
-},
-Default={
-Theme="Purple",
-UISize=UDim2.fromOffset(550,380),
-TabSize=160
-},
+local s = {
+    Information = {
+        Version = "v2.0.1",
+        GitHubOwner = "tlredz"
+    },
+    Default = {
+        Theme = "Purple",
+        UISize = UDim2.fromOffset(550, 380),
+        TabSize = 160
+    }
 
 Themes=r,
 
