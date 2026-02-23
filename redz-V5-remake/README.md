@@ -216,8 +216,8 @@ Tab:AddDropdown({
 Tab:AddDropdown({
   Name = "Dropdown",
   MultiSelect = true,
-  Options = {"one", "two", "three"},
-  Default = {"one"},
+  Options = {"one", "two", "three", "four", "five"},
+  Default = {"one", "four"},
   Callback = function(Value)
     
   end
