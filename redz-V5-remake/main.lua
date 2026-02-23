@@ -60,8 +60,8 @@ ColorSequenceKeypoint.new(0.00,Color3.fromRGB(15,0,15)),
 ColorSequenceKeypoint.new(0.50,Color3.fromRGB(25,0,25)),
 ColorSequenceKeypoint.new(1.00,Color3.fromRGB(15,0,15))
 },
-Primary=Color3.fromRGB(110,0,110), -- roxo padrão mais escuro
-OnPrimary=Color3.fromRGB(255,255,255), -- texto branco
+Primary=Color3.fromRGB(110,0,110),
+OnPrimary=Color3.fromRGB(255,255,255),
 ScrollBar=Color3.fromRGB(90,0,90),
 Stroke=Color3.fromRGB(50,0,50),
 
@@ -75,20 +75,20 @@ Dialog={
 Background=Color3.fromRGB(30,0,30)
 },
 Buttons={
-Holding=Color3.fromRGB(70,0,70), -- toggle ativado (mais forte)
-Default=Color3.fromRGB(45,0,45) -- toggle normal
+Default=Color3.fromRGB(60,0,60), -- 🔘 Toggle desligado (roxo escuro)
+Holding=Color3.fromRGB(190,90,255) -- 🟣 Toggle ligado (roxo claro forte)
 },
 Border={
-Holding=Color3.fromRGB(140,0,140),
-Default=Color3.fromRGB(65,0,65),
+Default=Color3.fromRGB(80,0,80),
+Holding=Color3.fromRGB(200,120,255),
 },
 Text={
-Default=Color3.fromRGB(255,255,255), -- texto principal branco
+Default=Color3.fromRGB(255,255,255),
 Dark=Color3.fromRGB(220,220,220),
 Darker=Color3.fromRGB(180,180,180),
 },
 Slider={
-SliderBar=Color3.fromRGB(100,0,100),
+SliderBar=Color3.fromRGB(110,0,110),
 SliderNumber=Color3.fromRGB(255,255,255),
 },
 Dropdown={
@@ -125,7 +125,7 @@ end
 
 local s={
 Information={
-Version="v2.0.5",
+Version="v2.0.1",
 GitHubOwner="tlredz"
 },
 Default={
@@ -139,7 +139,7 @@ Themes=r,
 Connections={},
 Options={},
 Tabs={}
-  }
+}
 
 
 s.Info=s.Information
