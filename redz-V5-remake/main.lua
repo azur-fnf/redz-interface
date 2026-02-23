@@ -52,87 +52,153 @@ local p=o:GetMouse()
 
 local q=(gethui or function()return g.CoreGui end)()
 
-local r={
-Darker={
-Colors={
-Background=ColorSequence.new{
-ColorSequenceKeypoint.new(0.00,Color3.fromRGB(25,25,25)),
-ColorSequenceKeypoint.new(0.50,Color3.fromRGB(32.5,32.5,32.5)),
-ColorSequenceKeypoint.new(1.00,Color3.fromRGB(25,25,25))
-},
-Primary=Color3.fromRGB(88,101,242),
-OnPrimary=Color3.fromRGB(61,67,135),
-ScrollBar=Color3.fromRGB(1,76,105),
-Stroke=Color3.fromRGB(45,45,45),
+local r = {
+    Darker = {
+        Colors = {
+            Background = ColorSequence.new{
+                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)),
+                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
+                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))
+            },
+            Primary = Color3.fromRGB(88, 101, 242),
+            OnPrimary = Color3.fromRGB(61, 67, 135),
+            ScrollBar = Color3.fromRGB(1, 76, 105),
+            Stroke = Color3.fromRGB(45, 45, 45),
 
-Error=Color3.fromRGB(255,102,102),
-Icons=Color3.fromRGB(232,233,235),
+            Error = Color3.fromRGB(255, 102, 102),
+            Icons = Color3.fromRGB(232, 233, 235),
 
-JoinButton=Color3.fromRGB(37,128,69),
-Link=Color3.fromRGB(40,150,255),
+            JoinButton = Color3.fromRGB(37, 128, 69),
+            Link = Color3.fromRGB(40, 150, 255),
 
-Dialog={
-Background=Color3.fromRGB(28,28,28)
-},
-Buttons={
-Holding=Color3.fromRGB(34,34,34),
-Default=Color3.fromRGB(28,28,30)
-},
-Border={
-Holding=Color3.fromRGB(60,60,60),
-Default=Color3.fromRGB(38,38,38),
-},
-Text={
-Default=Color3.fromRGB(255,255,255),
-Dark=Color3.fromRGB(200,200,200),
-Darker=Color3.fromRGB(175,175,175),
-},
-Slider={
-SliderBar=Color3.fromRGB(1,76,105),
-SliderNumber=Color3.fromRGB(232,233,235),
-},
-Dropdown={
-Holder=Color3.fromRGB(30,30,30),
-}
-},
-Icons={
-Error="rbxassetid://10709752996",
-Button="rbxassetid://10709791437",
-Close="rbxassetid://10747384394",
-TextBox="rbxassetid://15637081879",
-Search="rbxassetid://10734943674",
-Keybind="rbxassetid://10734982144",
-Dropdown={
-Open="rbxassetid://10709791523",
-Close="rbxassetid://10709790948"
-}
-},
-Font={
-Normal=Enum.Font.BuilderSans,
-Medium=Enum.Font.BuilderSansMedium,
-Bold=Enum.Font.BuilderSansBold,
-ExtraBold=Enum.Font.BuilderSansExtraBold,
-SliderValue=Enum.Font.FredokaOne
-},
-BackgroundTransparency=0.03
-}
+            Dialog = {
+                Background = Color3.fromRGB(28, 28, 28)
+            },
+            Buttons = {
+                Holding = Color3.fromRGB(34, 34, 34),
+                Default = Color3.fromRGB(28, 28, 30)
+            },
+            Border = {
+                Holding = Color3.fromRGB(60, 60, 60),
+                Default = Color3.fromRGB(38, 38, 38),
+            },
+            Text = {
+                Default = Color3.fromRGB(255, 255, 255),
+                Dark = Color3.fromRGB(200, 200, 200),
+                Darker = Color3.fromRGB(175, 175, 175),
+            },
+            Slider = {
+                SliderBar = Color3.fromRGB(1, 76, 105),
+                SliderNumber = Color3.fromRGB(232, 233, 235),
+            },
+            Dropdown = {
+                Holder = Color3.fromRGB(30, 30, 30),
+            }
+        },
+        Icons = {
+            Error = "rbxassetid://10709752996",
+            Button = "rbxassetid://10709791437",
+            Close = "rbxassetid://10747384394",
+            TextBox = "rbxassetid://15637081879",
+            Search = "rbxassetid://10734943674",
+            Keybind = "rbxassetid://10734982144",
+            Dropdown = {
+                Open = "rbxassetid://10709791523",
+                Close = "rbxassetid://10709790948"
+            }
+        },
+        Font = {
+            Normal = Enum.Font.BuilderSans,
+            Medium = Enum.Font.BuilderSansMedium,
+            Bold = Enum.Font.BuilderSansBold,
+            ExtraBold = Enum.Font.BuilderSansExtraBold,
+            SliderValue = Enum.Font.FredokaOne
+        },
+        BackgroundTransparency = 0.03
+    },
+    Purple = {
+        Colors = {
+            Background = ColorSequence.new{
+                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(30, 20, 50)),
+                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(45, 30, 75)),
+                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 20, 50))
+            },
+            Primary = Color3.fromRGB(140, 82, 255),
+            OnPrimary = Color3.fromRGB(100, 50, 200),
+            ScrollBar = Color3.fromRGB(120, 60, 220),
+            Stroke = Color3.fromRGB(60, 40, 90),
+
+            Error = Color3.fromRGB(255, 80, 80),
+            Icons = Color3.fromRGB(240, 230, 255),
+
+            JoinButton = Color3.fromRGB(120, 50, 220),
+            Link = Color3.fromRGB(180, 130, 255),
+
+            Dialog = {
+                Background = Color3.fromRGB(35, 25, 55)
+            },
+            Buttons = {
+                Holding = Color3.fromRGB(55, 40, 85),
+                Default = Color3.fromRGB(45, 30, 70)
+            },
+            Border = {
+                Holding = Color3.fromRGB(100, 70, 160),
+                Default = Color3.fromRGB(70, 50, 110),
+            },
+            Text = {
+                Default = Color3.fromRGB(255, 255, 255),
+                Dark = Color3.fromRGB(210, 190, 240),
+                Darker = Color3.fromRGB(180, 160, 210),
+            },
+            Slider = {
+                SliderBar = Color3.fromRGB(140, 82, 255),
+                SliderNumber = Color3.fromRGB(240, 230, 255),
+            },
+            Dropdown = {
+                Holder = Color3.fromRGB(40, 30, 60),
+            }
+        },
+        Icons = {
+            Error = "rbxassetid://10709752996",
+            Button = "rbxassetid://10709791437",
+            Close = "rbxassetid://10747384394",
+            TextBox = "rbxassetid://15637081879",
+            Search = "rbxassetid://10734943674",
+            Keybind = "rbxassetid://10734982144",
+            Dropdown = {
+                Open = "rbxassetid://10709791523",
+                Close = "rbxassetid://10709790948"
+            }
+        },
+        Font = {
+            Normal = Enum.Font.BuilderSans,
+            Medium = Enum.Font.BuilderSansMedium,
+            Bold = Enum.Font.BuilderSansBold,
+            ExtraBold = Enum.Font.BuilderSansExtraBold,
+            SliderValue = Enum.Font.FredokaOne
+        },
+        BackgroundTransparency = 0.05
+    }
 }
 
-for s,t in r do
-t.Name=s
-table.freeze(t)
+-- Congelando temas e definindo nomes
+for s, t in r do
+    t.Name = s
+    table.freeze(t)
 end
 
-local s={
-Information={
-Version="v2.0.1",
-GitHubOwner="tlredz"
-},
-Default={
-Theme="Darker",
-UISize=UDim2.fromOffset(550,380),
-TabSize=160
-},
+-- Informações iniciais da Library
+local s = {
+    Information = {
+        Version = "v2.0.2",
+        GitHubOwner = "azuriondeve"
+    },
+    Default = {
+        Theme = "Purple", -- Definindo o novo tema como padrão
+        UISize = UDim2.fromOffset(550, 380),
+        TabSize = 160
+    }
+}
 
 Themes=r,
 
