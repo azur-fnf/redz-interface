@@ -57,7 +57,7 @@ Darker={
 Colors={
 Background=ColorSequence.new{
 ColorSequenceKeypoint.new(0.00,Color3.fromRGB(25,25,25)),
-ColorSequenceKeypoint.new(0.50,Color3.fromRGB(32.5,32.5,32.5)),
+ColorSequenceKeypoint.new(0.50,Color3.fromRGB(32,32,32)), -- Lua não aceita 32.5
 ColorSequenceKeypoint.new(1.00,Color3.fromRGB(25,25,25))
 },
 Primary=Color3.fromRGB(88,101,242),
