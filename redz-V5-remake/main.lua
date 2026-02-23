@@ -61,38 +61,36 @@ ColorSequenceKeypoint.new(0.50,Color3.fromRGB(40,0,40)),
 ColorSequenceKeypoint.new(1.00,Color3.fromRGB(20,0,20))
 },
 Primary=Color3.fromRGB(150,0,150),
-OnPrimary=Color3.fromRGB(100,0,100),
+OnPrimary=Color3.fromRGB(220,220,220), -- Mais claro para contraste com roxo
 ScrollBar=Color3.fromRGB(120,0,120),
-Stroke=Color3.fromRGB(60,0,60),
-
+Stroke=Color3.fromRGB(90,0,90), -- Leve diferença para borda
 Error=Color3.fromRGB(255,100,150),
-Icons=Color3.fromRGB(200,150,255),
-
+Icons=Color3.fromRGB(255,255,255), -- Ícones brancos para melhor leitura
 JoinButton=Color3.fromRGB(130,0,130),
-Link=Color3.fromRGB(200,100,255),
+Link=Color3.fromRGB(180,100,255), -- Link mais visível
 
 Dialog={
-Background=Color3.fromRGB(40,0,40)
+Background=Color3.fromRGB(50,0,50)
 },
 Buttons={
-Holding=Color3.fromRGB(60,0,60),
-Default=Color3.fromRGB(45,0,45)
+Holding=Color3.fromRGB(70,0,70),
+Default=Color3.fromRGB(55,0,55)
 },
 Border={
-Holding=Color3.fromRGB(100,0,100),
-Default=Color3.fromRGB(70,0,70),
+Holding=Color3.fromRGB(110,0,110),
+Default=Color3.fromRGB(85,0,85),
 },
 Text={
-Default=Color3.fromRGB(255,200,255),
-Dark=Color3.fromRGB(220,150,220),
-Darker=Color3.fromRGB(180,120,180),
+Default=Color3.fromRGB(255,255,255), -- Texto principal branco
+Dark=Color3.fromRGB(220,200,220), -- Texto secundário claro
+Darker=Color3.fromRGB(180,150,180), -- Texto menos destacado
 },
 Slider={
-SliderBar=Color3.fromRGB(120,0,120),
-SliderNumber=Color3.fromRGB(255,200,255),
+SliderBar=Color3.fromRGB(130,0,130),
+SliderNumber=Color3.fromRGB(255,255,255), -- Número do slider branco
 },
 Dropdown={
-Holder=Color3.fromRGB(40,0,40),
+Holder=Color3.fromRGB(50,0,50)
 }
 },
 Icons={
@@ -125,21 +123,20 @@ end
 
 local s={
 Information={
-Version="v2.0.1",
-GitHubOwner="tlredz"
+Version="v2.0.2",
+GitHubOwner="azuriondeve" -- sorry tlredz
 },
 Default={
 Theme="Darker",
 UISize=UDim2.fromOffset(550,380),
 TabSize=160
 },
-
 Themes=r,
-
 Connections={},
 Options={},
 Tabs={}
 }
+
 
 s.Info=s.Information
 s.Save=s.Default
