@@ -1,3 +1,11 @@
+--[[
+
+
+
+
+
+
+wtf where you found library?
 
 
 
@@ -12,15 +20,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+]]
 
 
 local a=cloneref or(function(...)return...end)
@@ -52,66 +52,47 @@ local p=o:GetMouse()
 
 local q=(gethui or function()return g.CoreGui end)()
 
-
-
-
-s.Info=s.Information
-s.Save=s.Default
-
-local t=workspace.CurrentCamera.ViewportSize local u=function(
-
-u, v, w)
-table.insert(s.Connections,u[w or"Connect"](u,v))end
-
-
-local v={}
-v.__index=v local w=function(
-
-w, x)
-for y in x:gmatch"[^%.]+"do
-w=w[y]
-end
 local r={
 Darker={
 Colors={
 Background=ColorSequence.new{
-ColorSequenceKeypoint.new(0.00,Color3.fromRGB(15,0,15)),
-ColorSequenceKeypoint.new(0.50,Color3.fromRGB(25,0,25)),
-ColorSequenceKeypoint.new(1.00,Color3.fromRGB(15,0,15))
+ColorSequenceKeypoint.new(0.00,Color3.fromRGB(18,0,18)),
+ColorSequenceKeypoint.new(0.50,Color3.fromRGB(28,0,28)),
+ColorSequenceKeypoint.new(1.00,Color3.fromRGB(18,0,18))
 },
-Primary=Color3.fromRGB(110,0,110), -- roxo padrão mais escuro
-OnPrimary=Color3.fromRGB(255,255,255), -- texto branco
-ScrollBar=Color3.fromRGB(90,0,90),
-Stroke=Color3.fromRGB(50,0,50),
+Primary=Color3.fromRGB(85,0,85), -- roxo base sempre escuro
+OnPrimary=Color3.fromRGB(255,255,255),
+ScrollBar=Color3.fromRGB(70,0,70),
+Stroke=Color3.fromRGB(45,0,45),
 
 Error=Color3.fromRGB(255,90,140),
 Icons=Color3.fromRGB(255,255,255),
 
-JoinButton=Color3.fromRGB(100,0,100),
-Link=Color3.fromRGB(170,90,255),
+JoinButton=Color3.fromRGB(80,0,80),
+Link=Color3.fromRGB(150,70,220),
 
 Dialog={
-Background=Color3.fromRGB(30,0,30)
+Background=Color3.fromRGB(25,0,25)
 },
 Buttons={
-Holding=Color3.fromRGB(70,0,70), -- toggle ativado (mais forte)
-Default=Color3.fromRGB(45,0,45) -- toggle normal
+Default=Color3.fromRGB(55,0,55), -- 🔘 toggle desligado (bem escuro)
+Holding=Color3.fromRGB(160,80,230) -- 🟣 toggle ligado (mais claro)
 },
 Border={
-Holding=Color3.fromRGB(140,0,140),
 Default=Color3.fromRGB(65,0,65),
+Holding=Color3.fromRGB(170,90,240),
 },
 Text={
-Default=Color3.fromRGB(255,255,255), -- texto principal branco
+Default=Color3.fromRGB(255,255,255),
 Dark=Color3.fromRGB(220,220,220),
 Darker=Color3.fromRGB(180,180,180),
 },
 Slider={
-SliderBar=Color3.fromRGB(100,0,100),
+SliderBar=Color3.fromRGB(75,0,75),
 SliderNumber=Color3.fromRGB(255,255,255),
 },
 Dropdown={
-Holder=Color3.fromRGB(35,0,35)
+Holder=Color3.fromRGB(30,0,30)
 }
 },
 Icons={
@@ -144,7 +125,7 @@ end
 
 local s={
 Information={
-Version="v2.0.3",
+Version="v2.0.5",
 GitHubOwner="tlredz"
 },
 Default={
@@ -158,7 +139,28 @@ Themes=r,
 Connections={},
 Options={},
 Tabs={}
-    }
+}
+
+
+s.Info=s.Information
+s.Save=s.Default
+
+local t=workspace.CurrentCamera.ViewportSize local u=function(
+
+u, v, w)
+table.insert(s.Connections,u[w or"Connect"](u,v))end
+
+
+local v={}
+v.__index=v local w=function(
+
+w, x)
+for y in x:gmatch"[^%.]+"do
+w=w[y]
+end
+
+
+        
 return w end local x=function(
 
 
