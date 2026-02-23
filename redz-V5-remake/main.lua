@@ -120,25 +120,25 @@ Purple={
 Colors={
 Background=ColorSequence.new{
 ColorSequenceKeypoint.new(0.00,Color3.fromRGB(15,0,15)),
-ColorSequenceKeypoint.new(0.50,Color3.fromRGB(25,0,25)),
+ColorSequenceKeypoint.new(0.50,Color3.fromRGB(22,5,22)),
 ColorSequenceKeypoint.new(1.00,Color3.fromRGB(15,0,15))
 },
-Primary=Color3.fromRGB(160,80,230),
+Primary=Color3.fromRGB(140,70,210),
 OnPrimary=Color3.fromRGB(80,40,115),
-ScrollBar=Color3.fromRGB(100,50,150),
-Stroke=Color3.fromRGB(45,0,45),
+ScrollBar=Color3.fromRGB(90,40,140),
+Stroke=Color3.fromRGB(40,10,40),
 Error=Color3.fromRGB(255,102,102),
 Icons=Color3.fromRGB(232,233,235),
-JoinButton=Color3.fromRGB(120,40,180),
-Link=Color3.fromRGB(200,100,255),
-Dialog={Background=Color3.fromRGB(20,0,20)},
+JoinButton=Color3.fromRGB(110,35,170),
+Link=Color3.fromRGB(190,90,245),
+Dialog={Background=Color3.fromRGB(18,2,18)},
 Buttons={
-Holding=Color3.fromRGB(160,80,230), -- Ativo
-Default=Color3.fromRGB(40,0,40) -- Desativado
+Holding=Color3.fromRGB(140,70,210), -- Ativo (Roxo Suave)
+Default=Color3.fromRGB(35,10,35) -- Desativado (Escuro)
 },
 Border={
-Holding=Color3.fromRGB(180,100,250),
-Default=Color3.fromRGB(60,0,60),
+Holding=Color3.fromRGB(160,90,230),
+Default=Color3.fromRGB(50,20,50),
 },
 Text={
 Default=Color3.fromRGB(255,255,255),
@@ -146,10 +146,10 @@ Dark=Color3.fromRGB(200,200,200),
 Darker=Color3.fromRGB(175,175,175),
 },
 Slider={
-SliderBar=Color3.fromRGB(100,50,150),
+SliderBar=Color3.fromRGB(90,40,140),
 SliderNumber=Color3.fromRGB(232,233,235),
 },
-Dropdown={Holder=Color3.fromRGB(25,0,25)}
+Dropdown={Holder=Color3.fromRGB(22,5,22)}
 },
 Icons={
 Error="rbxassetid://10709752996",
@@ -166,26 +166,26 @@ BackgroundTransparency=0.03
 Red={
 Colors={
 Background=ColorSequence.new{
-ColorSequenceKeypoint.new(0.00,Color3.fromRGB(20,0,0)),
-ColorSequenceKeypoint.new(0.50,Color3.fromRGB(30,0,0)),
-ColorSequenceKeypoint.new(1.00,Color3.fromRGB(20,0,0))
+ColorSequenceKeypoint.new(0.00,Color3.fromRGB(20,5,5)),
+ColorSequenceKeypoint.new(0.50,Color3.fromRGB(28,8,8)),
+ColorSequenceKeypoint.new(1.00,Color3.fromRGB(20,5,5))
 },
-Primary=Color3.fromRGB(230,50,50),
-OnPrimary=Color3.fromRGB(115,25,25),
-ScrollBar=Color3.fromRGB(150,30,30),
-Stroke=Color3.fromRGB(45,0,0),
-Error=Color3.fromRGB(255,50,50),
+Primary=Color3.fromRGB(200,60,60),
+OnPrimary=Color3.fromRGB(100,30,30),
+ScrollBar=Color3.fromRGB(130,40,40),
+Stroke=Color3.fromRGB(40,15,15),
+Error=Color3.fromRGB(255,80,80),
 Icons=Color3.fromRGB(232,233,235),
-JoinButton=Color3.fromRGB(180,20,20),
-Link=Color3.fromRGB(255,80,80),
-Dialog={Background=Color3.fromRGB(25,0,0)},
+JoinButton=Color3.fromRGB(160,30,30),
+Link=Color3.fromRGB(230,100,100),
+Dialog={Background=Color3.fromRGB(22,6,6)},
 Buttons={
-Holding=Color3.fromRGB(230,50,50), -- Ativo
-Default=Color3.fromRGB(50,0,0) -- Desativado
+Holding=Color3.fromRGB(190,55,55), -- Ativo (Vermelho menos "gritante")
+Default=Color3.fromRGB(45,15,15) -- Desativado (Escuro)
 },
 Border={
-Holding=Color3.fromRGB(250,70,70),
-Default=Color3.fromRGB(70,0,0),
+Holding=Color3.fromRGB(210,75,75),
+Default=Color3.fromRGB(60,25,25),
 },
 Text={
 Default=Color3.fromRGB(255,255,255),
@@ -193,10 +193,10 @@ Dark=Color3.fromRGB(200,200,200),
 Darker=Color3.fromRGB(175,175,175),
 },
 Slider={
-SliderBar=Color3.fromRGB(150,30,30),
+SliderBar=Color3.fromRGB(130,40,40),
 SliderNumber=Color3.fromRGB(232,233,235),
 },
-Dropdown={Holder=Color3.fromRGB(30,0,0)}
+Dropdown={Holder=Color3.fromRGB(25,10,10)}
 },
 Icons={
 Error="rbxassetid://10709752996",
@@ -213,26 +213,26 @@ BackgroundTransparency=0.03
 Blue={
 Colors={
 Background=ColorSequence.new{
-ColorSequenceKeypoint.new(0.00,Color3.fromRGB(0,10,25)),
-ColorSequenceKeypoint.new(0.50,Color3.fromRGB(0,20,40)),
-ColorSequenceKeypoint.new(1.00,Color3.fromRGB(0,10,25))
+ColorSequenceKeypoint.new(0.00,Color3.fromRGB(5,10,20)),
+ColorSequenceKeypoint.new(0.50,Color3.fromRGB(8,15,30)),
+ColorSequenceKeypoint.new(1.00,Color3.fromRGB(5,10,20))
 },
-Primary=Color3.fromRGB(50,150,255),
-OnPrimary=Color3.fromRGB(25,75,125),
-ScrollBar=Color3.fromRGB(30,100,200),
-Stroke=Color3.fromRGB(0,25,45),
+Primary=Color3.fromRGB(60,130,220),
+OnPrimary=Color3.fromRGB(30,65,110),
+ScrollBar=Color3.fromRGB(40,90,160),
+Stroke=Color3.fromRGB(10,20,35),
 Error=Color3.fromRGB(255,102,102),
 Icons=Color3.fromRGB(232,233,235),
-JoinButton=Color3.fromRGB(20,80,180),
-Link=Color3.fromRGB(80,180,255),
-Dialog={Background=Color3.fromRGB(0,15,30)},
+JoinButton=Color3.fromRGB(30,80,160),
+Link=Color3.fromRGB(100,160,240),
+Dialog={Background=Color3.fromRGB(6,12,25)},
 Buttons={
-Holding=Color3.fromRGB(50,150,255), -- Ativo
-Default=Color3.fromRGB(0,35,70) -- Desativado
+Holding=Color3.fromRGB(55,120,200), -- Ativo (Azul Calmo)
+Default=Color3.fromRGB(15,30,55) -- Desativado (Escuro)
 },
 Border={
-Holding=Color3.fromRGB(70,170,255),
-Default=Color3.fromRGB(0,45,90),
+Holding=Color3.fromRGB(75,140,230),
+Default=Color3.fromRGB(25,45,80),
 },
 Text={
 Default=Color3.fromRGB(255,255,255),
@@ -240,10 +240,10 @@ Dark=Color3.fromRGB(200,200,200),
 Darker=Color3.fromRGB(175,175,175),
 },
 Slider={
-SliderBar=Color3.fromRGB(30,100,200),
+SliderBar=Color3.fromRGB(40,90,160),
 SliderNumber=Color3.fromRGB(232,233,235),
 },
-Dropdown={Holder=Color3.fromRGB(0,20,45)}
+Dropdown={Holder=Color3.fromRGB(10,20,40)}
 },
 Icons={
 Error="rbxassetid://10709752996",
