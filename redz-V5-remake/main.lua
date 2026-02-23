@@ -52,91 +52,93 @@ local p=o:GetMouse()
 
 local q=(gethui or function()return g.CoreGui end)()
 
-local r = {
-    Purple = {
-        Colors = {
-            Background = ColorSequence.new{
-                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(15, 0, 25)),
-                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(30, 0, 50)),
-                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 0, 25))
-            },
-            Primary = Color3.fromRGB(180, 80, 255),
-            OnPrimary = Color3.fromRGB(90, 40, 130),
-            ScrollBar = Color3.fromRGB(140, 60, 200),
-            Stroke = Color3.fromRGB(60, 20, 100),
+local r={
+Darker={
+Colors={
+Background=ColorSequence.new{
+ColorSequenceKeypoint.new(0.00,Color3.fromRGB(20,0,20)),
+ColorSequenceKeypoint.new(0.50,Color3.fromRGB(40,0,40)),
+ColorSequenceKeypoint.new(1.00,Color3.fromRGB(20,0,20))
+},
+Primary=Color3.fromRGB(150,0,150),
+OnPrimary=Color3.fromRGB(100,0,100),
+ScrollBar=Color3.fromRGB(120,0,120),
+Stroke=Color3.fromRGB(60,0,60),
 
-            Error = Color3.fromRGB(255, 100, 255),
-            Icons = Color3.fromRGB(230, 200, 255),
+Error=Color3.fromRGB(255,100,150),
+Icons=Color3.fromRGB(200,150,255),
 
-            JoinButton = Color3.fromRGB(150, 50, 220),
-            Link = Color3.fromRGB(220, 150, 255),
+JoinButton=Color3.fromRGB(130,0,130),
+Link=Color3.fromRGB(200,100,255),
 
-            Dialog = {
-                Background = Color3.fromRGB(25, 5, 40)
-            },
-            Buttons = {
-                Holding = Color3.fromRGB(60, 20, 90),
-                Default = Color3.fromRGB(40, 10, 60)
-            },
-            Border = {
-                Holding = Color3.fromRGB(120, 60, 180),
-                Default = Color3.fromRGB(80, 40, 120),
-            },
-            Text = {
-                Default = Color3.fromRGB(255, 255, 255),
-                Dark = Color3.fromRGB(200, 180, 220),
-                Darker = Color3.fromRGB(160, 140, 180),
-            },
-            Slider = {
-                SliderBar = Color3.fromRGB(140, 60, 220),
-                SliderNumber = Color3.fromRGB(240, 220, 255),
-            },
-            Dropdown = {
-                Holder = Color3.fromRGB(45, 10, 70),
-            }
-        },
-        Icons = {
-            Error = "rbxassetid://10709752996",
-            Button = "rbxassetid://10709791437",
-            Close = "rbxassetid://10747384394",
-            TextBox = "rbxassetid://15637081879",
-            Search = "rbxassetid://10734943674",
-            Keybind = "rbxassetid://10734982144",
-            Dropdown = {
-                Open = "rbxassetid://10709791523",
-                Close = "rbxassetid://10709790948"
-            }
-        },
-        Font = {
-            Normal = Enum.Font.BuilderSans,
-            Medium = Enum.Font.BuilderSansMedium,
-            Bold = Enum.Font.BuilderSansBold,
-            ExtraBold = Enum.Font.BuilderSansExtraBold,
-            SliderValue = Enum.Font.FredokaOne
-        },
-        BackgroundTransparency = 0.03
-    }
+Dialog={
+Background=Color3.fromRGB(40,0,40)
+},
+Buttons={
+Holding=Color3.fromRGB(60,0,60),
+Default=Color3.fromRGB(45,0,45)
+},
+Border={
+Holding=Color3.fromRGB(100,0,100),
+Default=Color3.fromRGB(70,0,70),
+},
+Text={
+Default=Color3.fromRGB(255,200,255),
+Dark=Color3.fromRGB(220,150,220),
+Darker=Color3.fromRGB(180,120,180),
+},
+Slider={
+SliderBar=Color3.fromRGB(120,0,120),
+SliderNumber=Color3.fromRGB(255,200,255),
+},
+Dropdown={
+Holder=Color3.fromRGB(40,0,40),
+}
+},
+Icons={
+Error="rbxassetid://10709752996",
+Button="rbxassetid://10709791437",
+Close="rbxassetid://10747384394",
+TextBox="rbxassetid://15637081879",
+Search="rbxassetid://10734943674",
+Keybind="rbxassetid://10734982144",
+Dropdown={
+Open="rbxassetid://10709791523",
+Close="rbxassetid://10709790948"
+}
+},
+Font={
+Normal=Enum.Font.BuilderSans,
+Medium=Enum.Font.BuilderSansMedium,
+Bold=Enum.Font.BuilderSansBold,
+ExtraBold=Enum.Font.BuilderSansExtraBold,
+SliderValue=Enum.Font.FredokaOne
+},
+BackgroundTransparency=0.03
+}
 }
 
-for s, t in r do
-    t.Name = s
-    table.freeze(t)
+for s,t in r do
+t.Name=s
+table.freeze(t)
 end
 
-local s = {
-    Information = {
-        Version = "v2.0.1",
-        GitHubOwner = "tlredz"
-    },
-    Default = {
-        Theme = "Purple",
-        UISize = UDim2.fromOffset(550, 380),
-        TabSize = 160
-    },
-    Themes = r,
-    Connections = {},
-    Options = {},
-    Tabs = {}
+local s={
+Information={
+Version="v2.0.1",
+GitHubOwner="tlredz"
+},
+Default={
+Theme="Darker",
+UISize=UDim2.fromOffset(550,380),
+TabSize=160
+},
+
+Themes=r,
+
+Connections={},
+Options={},
+Tabs={}
 }
 
 s.Info=s.Information
