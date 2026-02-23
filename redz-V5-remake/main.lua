@@ -57,42 +57,42 @@ Darker={
 Colors={
 Background=ColorSequence.new{
 ColorSequenceKeypoint.new(0.00,Color3.fromRGB(18,0,18)),
-ColorSequenceKeypoint.new(0.50,Color3.fromRGB(28,0,28)),
+ColorSequenceKeypoint.new(0.50,Color3.fromRGB(26,0,26)),
 ColorSequenceKeypoint.new(1.00,Color3.fromRGB(18,0,18))
 },
-Primary=Color3.fromRGB(85,0,85), -- roxo base sempre escuro
-OnPrimary=Color3.fromRGB(255,255,255),
-ScrollBar=Color3.fromRGB(70,0,70),
-Stroke=Color3.fromRGB(45,0,45),
+Primary=Color3.fromRGB(80,0,80),
+OnPrimary=Color3.fromRGB(235,235,235),
+ScrollBar=Color3.fromRGB(60,0,60),
+Stroke=Color3.fromRGB(40,0,40),
 
-Error=Color3.fromRGB(255,90,140),
-Icons=Color3.fromRGB(255,255,255),
+Error=Color3.fromRGB(200,70,120),
+Icons=Color3.fromRGB(235,235,235),
 
-JoinButton=Color3.fromRGB(80,0,80),
-Link=Color3.fromRGB(150,70,220),
+JoinButton=Color3.fromRGB(75,0,75),
+Link=Color3.fromRGB(120,60,180),
 
 Dialog={
-Background=Color3.fromRGB(25,0,25)
+Background=Color3.fromRGB(22,0,22)
 },
 Buttons={
-Default=Color3.fromRGB(55,0,55), -- 🔘 toggle desligado (bem escuro)
-Holding=Color3.fromRGB(160,80,230) -- 🟣 toggle ligado (mais claro)
+Default=Color3.fromRGB(45,0,45), -- toggle OFF
+Holding=Color3.fromRGB(120,55,175) -- toggle ON
 },
 Border={
-Default=Color3.fromRGB(65,0,65),
-Holding=Color3.fromRGB(170,90,240),
+Default=Color3.fromRGB(55,0,55),
+Holding=Color3.fromRGB(135,65,195),
 },
 Text={
-Default=Color3.fromRGB(255,255,255),
-Dark=Color3.fromRGB(220,220,220),
-Darker=Color3.fromRGB(180,180,180),
+Default=Color3.fromRGB(240,240,240),
+Dark=Color3.fromRGB(200,200,200),
+Darker=Color3.fromRGB(165,165,165),
 },
 Slider={
-SliderBar=Color3.fromRGB(75,0,75),
-SliderNumber=Color3.fromRGB(255,255,255),
+SliderBar=Color3.fromRGB(60,0,60),
+SliderNumber=Color3.fromRGB(230,230,230),
 },
 Dropdown={
-Holder=Color3.fromRGB(30,0,30)
+Holder=Color3.fromRGB(28,0,28)
 }
 },
 Icons={
@@ -119,8 +119,8 @@ BackgroundTransparency=0.03
 }
 
 for s,t in r do
-t.Name=s
-table.freeze(t)
+	t.Name=s
+	table.freeze(t)
 end
 
 local s={
@@ -133,9 +133,7 @@ Theme="Darker",
 UISize=UDim2.fromOffset(550,380),
 TabSize=160
 },
-
 Themes=r,
-
 Connections={},
 Options={},
 Tabs={}
