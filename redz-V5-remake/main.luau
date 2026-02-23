@@ -66,33 +66,33 @@ ScrollBar=Color3.fromRGB(60,0,60),
 Stroke=Color3.fromRGB(40,0,40),
 
 Error=Color3.fromRGB(200,70,120),
-Icons=Color3.fromRGB(235,235,235),
+Icons=Color3.fromRGB(210,210,210),
 
-JoinButton=Color3.fromRGB(75,0,75),
+JoinButton=Color3.fromRGB(70,0,70),
 Link=Color3.fromRGB(120,60,180),
 
 Dialog={
 Background=Color3.fromRGB(22,0,22)
 },
 Buttons={
-Default=Color3.fromRGB(45,0,45), -- toggle OFF
-Holding=Color3.fromRGB(120,55,175) -- toggle ON
+Default=Color3.fromRGB(38,0,38), -- OFF
+Holding=Color3.fromRGB(105,45,155) -- ON
 },
 Border={
-Default=Color3.fromRGB(55,0,55),
-Holding=Color3.fromRGB(135,65,195),
+Default=Color3.fromRGB(50,0,50),
+Holding=Color3.fromRGB(120,55,180),
 },
 Text={
-Default=Color3.fromRGB(240,240,240),
-Dark=Color3.fromRGB(200,200,200),
-Darker=Color3.fromRGB(165,165,165),
+Default=Color3.fromRGB(235,235,235),
+Dark=Color3.fromRGB(195,195,195),
+Darker=Color3.fromRGB(160,160,160),
 },
 Slider={
-SliderBar=Color3.fromRGB(60,0,60),
-SliderNumber=Color3.fromRGB(230,230,230),
+SliderBar=Color3.fromRGB(55,0,55),
+SliderNumber=Color3.fromRGB(220,220,220),
 },
 Dropdown={
-Holder=Color3.fromRGB(28,0,28)
+Holder=Color3.fromRGB(26,0,26)
 }
 },
 Icons={
@@ -138,7 +138,6 @@ Connections={},
 Options={},
 Tabs={}
 }
-
 
 s.Info=s.Information
 s.Save=s.Default
