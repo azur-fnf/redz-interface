@@ -129,6 +129,24 @@ for s, t in r do
     table.freeze(t)
 end
 
+local s={
+Information={
+Version="v2.0.2",
+GitHubOwner="azuriondeve" -- sorry redz
+},
+Default={
+Theme="Purple",
+UISize=UDim2.fromOffset(550,380),
+TabSize=160
+},
+
+Themes=r,
+
+Connections={},
+Options={},
+Tabs={}
+}
+
 s.Info=s.Information
 s.Save=s.Default
 
