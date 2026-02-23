@@ -56,41 +56,43 @@ local r={
 Darker={
 Colors={
 Background=ColorSequence.new{
-ColorSequenceKeypoint.new(0.00,Color3.fromRGB(20,0,20)),
-ColorSequenceKeypoint.new(0.50,Color3.fromRGB(40,0,40)),
-ColorSequenceKeypoint.new(1.00,Color3.fromRGB(20,0,20))
+ColorSequenceKeypoint.new(0.00,Color3.fromRGB(15,0,15)),
+ColorSequenceKeypoint.new(0.50,Color3.fromRGB(25,0,25)),
+ColorSequenceKeypoint.new(1.00,Color3.fromRGB(15,0,15))
 },
-Primary=Color3.fromRGB(150,0,150),
-OnPrimary=Color3.fromRGB(220,220,220), -- Mais claro para contraste com roxo
-ScrollBar=Color3.fromRGB(120,0,120),
-Stroke=Color3.fromRGB(90,0,90), -- Leve diferença para borda
-Error=Color3.fromRGB(255,100,150),
-Icons=Color3.fromRGB(255,255,255), -- Ícones brancos para melhor leitura
-JoinButton=Color3.fromRGB(130,0,130),
-Link=Color3.fromRGB(180,100,255), -- Link mais visível
+Primary=Color3.fromRGB(110,0,110), -- roxo padrão mais escuro
+OnPrimary=Color3.fromRGB(255,255,255), -- texto branco
+ScrollBar=Color3.fromRGB(90,0,90),
+Stroke=Color3.fromRGB(50,0,50),
+
+Error=Color3.fromRGB(255,90,140),
+Icons=Color3.fromRGB(255,255,255),
+
+JoinButton=Color3.fromRGB(100,0,100),
+Link=Color3.fromRGB(170,90,255),
 
 Dialog={
-Background=Color3.fromRGB(50,0,50)
+Background=Color3.fromRGB(30,0,30)
 },
 Buttons={
-Holding=Color3.fromRGB(70,0,70),
-Default=Color3.fromRGB(55,0,55)
+Holding=Color3.fromRGB(70,0,70), -- toggle ativado (mais forte)
+Default=Color3.fromRGB(45,0,45) -- toggle normal
 },
 Border={
-Holding=Color3.fromRGB(110,0,110),
-Default=Color3.fromRGB(85,0,85),
+Holding=Color3.fromRGB(140,0,140),
+Default=Color3.fromRGB(65,0,65),
 },
 Text={
-Default=Color3.fromRGB(255,255,255), -- Texto principal branco
-Dark=Color3.fromRGB(220,200,220), -- Texto secundário claro
-Darker=Color3.fromRGB(180,150,180), -- Texto menos destacado
+Default=Color3.fromRGB(255,255,255), -- texto principal branco
+Dark=Color3.fromRGB(220,220,220),
+Darker=Color3.fromRGB(180,180,180),
 },
 Slider={
-SliderBar=Color3.fromRGB(130,0,130),
-SliderNumber=Color3.fromRGB(255,255,255), -- Número do slider branco
+SliderBar=Color3.fromRGB(100,0,100),
+SliderNumber=Color3.fromRGB(255,255,255),
 },
 Dropdown={
-Holder=Color3.fromRGB(50,0,50)
+Holder=Color3.fromRGB(35,0,35)
 }
 },
 Icons={
@@ -123,19 +125,21 @@ end
 
 local s={
 Information={
-Version="v2.0.2",
-GitHubOwner="azuriondeve" -- sorry tlredz
+Version="v2.0.5",
+GitHubOwner="tlredz"
 },
 Default={
 Theme="Darker",
 UISize=UDim2.fromOffset(550,380),
 TabSize=160
 },
+
 Themes=r,
+
 Connections={},
 Options={},
 Tabs={}
-}
+  }
 
 
 s.Info=s.Information
