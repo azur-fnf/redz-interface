@@ -132,13 +132,11 @@ local s = {
         Theme = "Purple",
         UISize = UDim2.fromOffset(550, 380),
         TabSize = 160
-    }
-
-Themes=r,
-
-Connections={},
-Options={},
-Tabs={}
+    },
+    Themes = r,
+    Connections = {},
+    Options = {},
+    Tabs = {}
 }
 
 s.Info=s.Information
