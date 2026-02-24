@@ -75,12 +75,16 @@ local Window = Library:MakeWindow({
 
 ```lua
 local Minimizer = Window:NewMinimizer({
-  KeyCode = Enum.KeyCode.LeftControl
+    KeyCode = Enum.KeyCode.Unknown -- Caso quiser que abra/feche pelo botão use unknown
 })
+```
+Para criar o botão do mobile 
 
+```lua 
 Minimizer:CreateMobileMinimizer({
-  Image = "rbxassetid://0",
-  BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Image = "rbxassetid://0",
+    BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+    CornerRadius = 1
 })
 ```
 
