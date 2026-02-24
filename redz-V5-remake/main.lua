@@ -5,18 +5,7 @@
 
 
 
-
-
-
-
-
-
-
-
-foda
-
-
-
+ta olhando oq truta???????????? o cdgo e open source e ainda com a doc 100% em portugues porra so usa la 
 
 
 
