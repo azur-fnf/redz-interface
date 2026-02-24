@@ -192,8 +192,8 @@ end
 
 local s={
 Information={
-Version="v2.0.1",
-GitHubOwner="tlredz"
+Version="v2.0.2",
+GitHubOwner="azuriondeve"
 },
 Default={
 Theme="Purple",
