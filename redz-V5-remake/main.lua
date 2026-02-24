@@ -2905,9 +2905,12 @@ ai.SetContent=ai.SetDescription
 ai.SetDesc=ai.SetDescription
 
 function aj:CreateMobileMinimizer(av)
-local ar=av.CornerRadius
+if av.CornerRadius then
+av.Corner={
+CornerRadius=UDim.new(av.CornerRadius,0)
+}
 av.CornerRadius=nil
-
+end
 local aw=E("ImageButton",I,{
 Size=UDim2.fromOffset(35,35),
 Position=UDim2.fromScale(0.17,0.28),
