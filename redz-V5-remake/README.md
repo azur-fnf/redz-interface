@@ -84,7 +84,7 @@ Para criar o botão do mobile
 Minimizer:CreateMobileMinimizer({
     Image = "rbxassetid://0",
     BackgroundColor3 = Color3.fromRGB(0, 0, 0),
-    CornerRadius = 1
+--    CornerRadius = 1 num ta funfando boy
 })
 ```
 
